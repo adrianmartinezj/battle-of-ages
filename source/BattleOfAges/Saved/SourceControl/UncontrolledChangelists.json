@@ -54,6 +54,12 @@
 				"D:/git/battle-of-ages/source/BattleOfAges/Content/Input/Move.uasset",
 				"D:/git/battle-of-ages/source/BattleOfAges/Content/Input/JumpInputMapping.uasset",
 				"D:/git/battle-of-ages/source/BattleOfAges/Content/Input/BattleOfAgesMapping.uasset",
+				"D:/git/battle-of-ages/source/BattleOfAges/Content/Blueprints/Environment/BP_BasePlatform.uasset",
+				"D:/git/battle-of-ages/source/BattleOfAges/Content/Blueprints/Environment/BP_CustomKillPlane.uasset",
+				"D:/git/battle-of-ages/source/BattleOfAges/Content/Blueprints/Environment/BP_SkinnyPlatform.uasset",
+				"D:/git/battle-of-ages/source/BattleOfAges/Content/Blueprints/Environment/BP_LongPlatform.uasset",
+				"D:/git/battle-of-ages/source/BattleOfAges/Content/Blueprints/Environment/BP_MovingPlatofrm.uasset",
+				"D:/git/battle-of-ages/source/BattleOfAges/Content/Blueprints/Environment/BP_MovingPlatform.uasset",
 				"D:/git/battle-of-ages/source/BattleOfAges/Content/Blueprints/PlatformerCamera.uasset"
 			]
 		}
