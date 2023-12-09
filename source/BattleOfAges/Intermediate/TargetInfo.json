@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "BattleOfAges",
+			"Path": "..\\Source\\BattleOfAges.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "BattleOfAgesEditor",
+			"Path": "..\\Source\\BattleOfAgesEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

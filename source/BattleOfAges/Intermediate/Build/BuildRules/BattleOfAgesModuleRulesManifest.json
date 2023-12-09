@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\git\\battle-of-ages\\source\\BattleOfAges\\Source\\BattleOfAges\\BattleOfAges.Build.cs",
+		"D:\\git\\battle-of-ages\\source\\BattleOfAges\\Source\\BattleOfAges.Target.cs",
+		"D:\\git\\battle-of-ages\\source\\BattleOfAges\\Source\\BattleOfAgesEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}
