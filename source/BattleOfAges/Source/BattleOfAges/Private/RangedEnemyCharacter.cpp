@@ -8,14 +8,13 @@ ARangedEnemyCharacter::ARangedEnemyCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	SetupProjectiles();
 }
 
 // Called when the game starts or when spawned
 void ARangedEnemyCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	SetupProjectiles();
 }
 
 // Called every frame
@@ -40,12 +39,13 @@ bool ARangedEnemyCharacter::RangedAttackForward()
 
 void ARangedEnemyCharacter::SetupProjectiles()
 {
-	// Initialize our projectile list
-	ProjectileList.Init(0, ProjectilesPerBurst);
-
 	for (int i = 0; i < ProjectilesPerBurst; i++)
 	{
-		WorkflowUtilities::SpawnActor(EnemyProjectile, NAME_None, &Location);
+		FVector Location = GetActorLocation();
+		FRotator Rotation(0.0f, 0.0f, 0.0f);
+		FActorSpawnParameters SpawnInfo;
+		AActor* projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Location, Rotation, SpawnInfo);
+		ProjectileList.Add(projectile);
 	}
 }
 

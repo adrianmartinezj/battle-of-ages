@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "d:\\git\\battle-of-ages\\source\\battleofages\\source\\battleofages\\private\\rangedenemycharacter.cpp",
+        "Source": "c:\\git\\battle-of-ages\\source\\battleofages\\source\\battleofages\\private\\rangedenemycharacter.cpp",
         "ProvidedModule": "",
         "Includes": [
-            "d:\\git\\battle-of-ages\\source\\battleofages\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\battleofages\\definitions.battleofages.h",
-            "d:\\git\\battle-of-ages\\source\\battleofages\\intermediate\\build\\win64\\x64\\battleofageseditor\\development\\engine\\shareddefinitions.engine.cpp20.h",
-            "d:\\git\\battle-of-ages\\source\\battleofages\\source\\battleofages\\public\\rangedenemycharacter.h",
+            "c:\\git\\battle-of-ages\\source\\battleofages\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\battleofages\\definitions.battleofages.h",
+            "c:\\git\\battle-of-ages\\source\\battleofages\\intermediate\\build\\win64\\x64\\battleofageseditor\\development\\engine\\shareddefinitions.engine.cpp20.h",
+            "c:\\git\\battle-of-ages\\source\\battleofages\\source\\battleofages\\public\\rangedenemycharacter.h",
             "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\core\\public\\coreminimal.h",
             "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\core\\public\\coretypes.h",
             "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\core\\public\\hal\\platform.h",
@@ -606,7 +606,9 @@
             "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\core\\public\\features\\imodularfeature.h",
             "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
             "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
-            "d:\\git\\battle-of-ages\\source\\battleofages\\intermediate\\build\\win64\\unrealeditor\\inc\\battleofages\\uht\\rangedenemycharacter.generated.h"
+            "c:\\git\\battle-of-ages\\source\\battleofages\\source\\battleofages\\public\\enemyprojectile.h",
+            "c:\\git\\battle-of-ages\\source\\battleofages\\intermediate\\build\\win64\\unrealeditor\\inc\\battleofages\\uht\\enemyprojectile.generated.h",
+            "c:\\git\\battle-of-ages\\source\\battleofages\\intermediate\\build\\win64\\unrealeditor\\inc\\battleofages\\uht\\rangedenemycharacter.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

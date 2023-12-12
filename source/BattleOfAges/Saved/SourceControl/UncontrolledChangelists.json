@@ -5,7 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"D:/git/battle-of-ages/source/BattleOfAges/Content/StarterContent/Architecture/Floor_400x400.uasset"
+				"D:/git/battle-of-ages/source/BattleOfAges/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/git/battle-of-ages/source/BattleOfAges/Content/Blueprints/Enemies/BP_RangedEnemyCharacter.uasset",
+				"C:/git/battle-of-ages/source/BattleOfAges/Content/Levels/Level_1.umap"
 			]
 		}
 	]

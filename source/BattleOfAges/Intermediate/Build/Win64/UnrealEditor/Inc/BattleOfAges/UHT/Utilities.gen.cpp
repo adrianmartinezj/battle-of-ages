@@ -75,15 +75,15 @@ void EmptyLinkFunctionForGeneratedCodeUtilities() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AUtilities);
 	AUtilities::~AUtilities() {}
-	struct Z_CompiledInDeferFile_FID_BattleOfAges_Source_BattleOfAges_Utilities_h_Statics
+	struct Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Utilities_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BattleOfAges_Source_BattleOfAges_Utilities_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Utilities_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_AUtilities, AUtilities::StaticClass, TEXT("AUtilities"), &Z_Registration_Info_UClass_AUtilities, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AUtilities), 2695596831U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BattleOfAges_Source_BattleOfAges_Utilities_h_3903462166(TEXT("/Script/BattleOfAges"),
-		Z_CompiledInDeferFile_FID_BattleOfAges_Source_BattleOfAges_Utilities_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_BattleOfAges_Source_BattleOfAges_Utilities_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Utilities_h_3903462166(TEXT("/Script/BattleOfAges"),
+		Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Utilities_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Utilities_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

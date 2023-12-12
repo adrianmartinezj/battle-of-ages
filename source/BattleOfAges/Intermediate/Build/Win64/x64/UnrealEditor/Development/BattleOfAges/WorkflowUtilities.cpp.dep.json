@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\git\\battle-of-ages\\source\\battleofages\\source\\battleofages\\private\\workflowutilities.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\git\\battle-of-ages\\source\\battleofages\\intermediate\\build\\win64\\x64\\battleofageseditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\git\\battle-of-ages\\source\\battleofages\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\battleofages\\definitions.battleofages.h",
+            "c:\\git\\battle-of-ages\\source\\battleofages\\source\\battleofages\\public\\workflowutilities.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

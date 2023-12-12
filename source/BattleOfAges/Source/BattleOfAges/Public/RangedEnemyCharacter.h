@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "EnemyProjectile.h"
 #include "RangedEnemyCharacter.generated.h"
 
 UCLASS()
@@ -29,10 +30,14 @@ public:
 	// Fires an EnemyProjectile from the ProjectileSource component directed along this characters forward.
 	bool RangedAttackForward();
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category="Projectile Settings")
 	int ProjectilesPerBurst = 3;
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Projectile Settings")
+	float DelayBetweenProjectiles = 0.25;
+
 private:
+	UPROPERTY(EditAnywhere)
 	TArray<AActor*> ProjectileList;
 
 	void SetupProjectiles();

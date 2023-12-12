@@ -11,6 +11,7 @@ void EmptyLinkFunctionForGeneratedCodeRangedEnemyCharacter() {}
 // Cross Module References
 	BATTLEOFAGES_API UClass* Z_Construct_UClass_ARangedEnemyCharacter();
 	BATTLEOFAGES_API UClass* Z_Construct_UClass_ARangedEnemyCharacter_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_BattleOfAges();
 // End Cross Module References
@@ -32,6 +33,15 @@ void EmptyLinkFunctionForGeneratedCodeRangedEnemyCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_ProjectilesPerBurst_MetaData[];
 #endif
 		static const UECodeGen_Private::FIntPropertyParams NewProp_ProjectilesPerBurst;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DelayBetweenProjectiles_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_DelayBetweenProjectiles;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ProjectileList_Inner;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ProjectileList_MetaData[];
+#endif
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_ProjectileList;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -50,13 +60,31 @@ void EmptyLinkFunctionForGeneratedCodeRangedEnemyCharacter() {}
 #endif
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectilesPerBurst_MetaData[] = {
+		{ "Category", "Projectile Settings" },
+		{ "ModuleRelativePath", "Public/RangedEnemyCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectilesPerBurst = { "ProjectilesPerBurst", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARangedEnemyCharacter, ProjectilesPerBurst), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectilesPerBurst_MetaData), Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectilesPerBurst_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_DelayBetweenProjectiles_MetaData[] = {
+		{ "Category", "Projectile Settings" },
+		{ "ModuleRelativePath", "Public/RangedEnemyCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_DelayBetweenProjectiles = { "DelayBetweenProjectiles", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARangedEnemyCharacter, DelayBetweenProjectiles), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_DelayBetweenProjectiles_MetaData), Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_DelayBetweenProjectiles_MetaData) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileList_Inner = { "ProjectileList", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileList_MetaData[] = {
 		{ "Category", "RangedEnemyCharacter" },
 		{ "ModuleRelativePath", "Public/RangedEnemyCharacter.h" },
 	};
 #endif
-	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectilesPerBurst = { "ProjectilesPerBurst", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARangedEnemyCharacter, ProjectilesPerBurst), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectilesPerBurst_MetaData), Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectilesPerBurst_MetaData) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileList = { "ProjectileList", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARangedEnemyCharacter, ProjectileList), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileList_MetaData), Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileList_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ARangedEnemyCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectilesPerBurst,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_DelayBetweenProjectiles,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileList_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileList,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ARangedEnemyCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ARangedEnemyCharacter>::IsAbstract,
@@ -91,15 +119,15 @@ void EmptyLinkFunctionForGeneratedCodeRangedEnemyCharacter() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ARangedEnemyCharacter);
 	ARangedEnemyCharacter::~ARangedEnemyCharacter() {}
-	struct Z_CompiledInDeferFile_FID_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_Statics
+	struct Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ARangedEnemyCharacter, ARangedEnemyCharacter::StaticClass, TEXT("ARangedEnemyCharacter"), &Z_Registration_Info_UClass_ARangedEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARangedEnemyCharacter), 1725020405U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_ARangedEnemyCharacter, ARangedEnemyCharacter::StaticClass, TEXT("ARangedEnemyCharacter"), &Z_Registration_Info_UClass_ARangedEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARangedEnemyCharacter), 3981161945U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_2985695085(TEXT("/Script/BattleOfAges"),
-		Z_CompiledInDeferFile_FID_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_3103730069(TEXT("/Script/BattleOfAges"),
+		Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "d:\\git\\battle-of-ages\\source\\battleofages\\source\\battleofages\\battleofages.cpp",
+        "Source": "c:\\git\\battle-of-ages\\source\\battleofages\\source\\battleofages\\battleofages.cpp",
         "ProvidedModule": "",
-        "PCH": "d:\\git\\battle-of-ages\\source\\battleofages\\intermediate\\build\\win64\\x64\\battleofageseditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "PCH": "c:\\git\\battle-of-ages\\source\\battleofages\\intermediate\\build\\win64\\x64\\battleofageseditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
         "Includes": [
-            "d:\\git\\battle-of-ages\\source\\battleofages\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\battleofages\\definitions.battleofages.h",
-            "d:\\git\\battle-of-ages\\source\\battleofages\\source\\battleofages\\battleofages.h"
+            "c:\\git\\battle-of-ages\\source\\battleofages\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\battleofages\\definitions.battleofages.h",
+            "c:\\git\\battle-of-ages\\source\\battleofages\\source\\battleofages\\battleofages.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

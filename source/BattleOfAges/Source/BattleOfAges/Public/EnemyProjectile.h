@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 #include "EnemyProjectile.generated.h"
 
 UCLASS()
@@ -23,4 +24,9 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
+	class UProjectileMovementComponent* ProjectileMovement;
+
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
+	float InitialSpeed = 800.0;
 };
