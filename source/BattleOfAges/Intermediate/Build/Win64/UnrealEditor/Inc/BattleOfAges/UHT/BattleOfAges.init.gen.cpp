@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeBattleOfAges_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xDD0DAE55,
-				0xB5F15EE6,
+				0xC8D3C039,
+				0x97AD4C1B,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_BattleOfAges.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_BattleOfAges.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_BattleOfAges(Z_Construct_UPackage__Script_BattleOfAges, TEXT("/Script/BattleOfAges"), Z_Registration_Info_UPackage__Script_BattleOfAges, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xDD0DAE55, 0xB5F15EE6));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_BattleOfAges(Z_Construct_UPackage__Script_BattleOfAges, TEXT("/Script/BattleOfAges"), Z_Registration_Info_UPackage__Script_BattleOfAges, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xC8D3C039, 0x97AD4C1B));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

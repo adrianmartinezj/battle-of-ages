@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "EnemyProjectile.h"
 #include "Engine/TimerHandle.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 #include "RangedEnemyCharacter.generated.h"
 
 UCLASS()

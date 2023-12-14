@@ -53,25 +53,13 @@
     <Filter Include="Source\BattleOfAges\Private">
       <UniqueIdentifier>{92FC1BDA-ED01-32DD-9DFA-5A89E053BDD7}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\BattleOfAges\Private\EnemyProjectile.cpp">
-      <Filter>Source\BattleOfAges\Private</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\BattleOfAges\Private\RangedEnemyCharacter.cpp">
-      <Filter>Source\BattleOfAges\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\BattleOfAges\Private\WorkflowUtilities.cpp">
       <Filter>Source\BattleOfAges\Private</Filter>
     </ClCompile>
     <Filter Include="Source\BattleOfAges\Public">
       <UniqueIdentifier>{8B4D4D11-1D46-3CF0-93C6-E227207E8659}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Source\BattleOfAges\Public\EnemyProjectile.h">
-      <Filter>Source\BattleOfAges\Public</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\BattleOfAges\Public\RangedEnemyCharacter.h">
-      <Filter>Source\BattleOfAges\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\BattleOfAges\Public\WorkflowUtilities.h">
       <Filter>Source\BattleOfAges\Public</Filter>
     </ClInclude>
   </ItemGroup>
