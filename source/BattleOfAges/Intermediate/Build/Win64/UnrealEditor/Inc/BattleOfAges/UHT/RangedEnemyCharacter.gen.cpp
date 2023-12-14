@@ -54,7 +54,13 @@ void EmptyLinkFunctionForGeneratedCodeRangedEnemyCharacter() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARangedEnemyCharacter_ResetProjectile_Statics::Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Resets the location of an existing projectile to the ProjectileSource. Exposed to Blueprint since it's useful to have in both spots.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/RangedEnemyCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Resets the location of an existing projectile to the ProjectileSource. Exposed to Blueprint since it's useful to have in both spots." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ARangedEnemyCharacter_ResetProjectile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARangedEnemyCharacter, nullptr, "ResetProjectile", nullptr, nullptr, Z_Construct_UFunction_ARangedEnemyCharacter_ResetProjectile_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ARangedEnemyCharacter_ResetProjectile_Statics::PropPointers), sizeof(Z_Construct_UFunction_ARangedEnemyCharacter_ResetProjectile_Statics::RangedEnemyCharacter_eventResetProjectile_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ARangedEnemyCharacter_ResetProjectile_Statics::Function_MetaDataParams), Z_Construct_UFunction_ARangedEnemyCharacter_ResetProjectile_Statics::Function_MetaDataParams) };
@@ -124,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeRangedEnemyCharacter() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ARangedEnemyCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ARangedEnemyCharacter_ResetProjectile, "ResetProjectile" }, // 4115277183
+		{ &Z_Construct_UFunction_ARangedEnemyCharacter_ResetProjectile, "ResetProjectile" }, // 2387698742
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -137,43 +143,79 @@ void EmptyLinkFunctionForGeneratedCodeRangedEnemyCharacter() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectilesPerBurst_MetaData[] = {
 		{ "Category", "Projectile Settings" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// How many projectiles should this fire per burst?\n" },
+#endif
 		{ "ModuleRelativePath", "Public/RangedEnemyCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "How many projectiles should this fire per burst?" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectilesPerBurst = { "ProjectilesPerBurst", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARangedEnemyCharacter, ProjectilesPerBurst), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectilesPerBurst_MetaData), Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectilesPerBurst_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_DelayBetweenProjectiles_MetaData[] = {
 		{ "Category", "Projectile Settings" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// How long of a delay between each shot in a burst? In seconds.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/RangedEnemyCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "How long of a delay between each shot in a burst? In seconds." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_DelayBetweenProjectiles = { "DelayBetweenProjectiles", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARangedEnemyCharacter, DelayBetweenProjectiles), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_DelayBetweenProjectiles_MetaData), Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_DelayBetweenProjectiles_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_DelayBetweenBursts_MetaData[] = {
 		{ "Category", "Projectile Settings" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// How long of a delay between each burst? In seconds.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/RangedEnemyCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "How long of a delay between each burst? In seconds." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_DelayBetweenBursts = { "DelayBetweenBursts", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARangedEnemyCharacter, DelayBetweenBursts), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_DelayBetweenBursts_MetaData), Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_DelayBetweenBursts_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileClass_MetaData[] = {
 		{ "Category", "Projectile Settings" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Which class to use for the projectile. Technically any class could be dropped in here as long as it behaves somewhat like our existing projectiles.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/RangedEnemyCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Which class to use for the projectile. Technically any class could be dropped in here as long as it behaves somewhat like our existing projectiles." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARangedEnemyCharacter, ProjectileClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileClass_MetaData), Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileClass_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ShotsRemaining_MetaData[] = {
 		{ "Category", "Projectile Settings" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Exposed to Blueprint in case it's useful in the future.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/RangedEnemyCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Exposed to Blueprint in case it's useful in the future." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ShotsRemaining = { "ShotsRemaining", nullptr, (EPropertyFlags)0x0010000000020005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARangedEnemyCharacter, ShotsRemaining), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ShotsRemaining_MetaData), Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ShotsRemaining_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileSource_MetaData[] = {
 		{ "Category", "RangedEnemyCharacter" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Placeable offset of where to start our projectiles.\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/RangedEnemyCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Placeable offset of where to start our projectiles." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileSource = { "ProjectileSource", nullptr, (EPropertyFlags)0x00100000000a000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARangedEnemyCharacter, ProjectileSource), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileSource_MetaData), Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileSource_MetaData) };
@@ -181,13 +223,25 @@ void EmptyLinkFunctionForGeneratedCodeRangedEnemyCharacter() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileList_MetaData[] = {
 		{ "Category", "RangedEnemyCharacter" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Array of all of our spawned projectile actors.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/RangedEnemyCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Array of all of our spawned projectile actors." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileList = { "ProjectileList", nullptr, (EPropertyFlags)0x0010000000020005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARangedEnemyCharacter, ProjectileList), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileList_MetaData), Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_ProjectileList_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_MemberTimerHandle_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Member timer handle to keep a reference of our current running timer (if any).\n" },
+#endif
 		{ "ModuleRelativePath", "Public/RangedEnemyCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Member timer handle to keep a reference of our current running timer (if any)." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_MemberTimerHandle = { "MemberTimerHandle", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARangedEnemyCharacter, MemberTimerHandle), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_MemberTimerHandle_MetaData), Z_Construct_UClass_ARangedEnemyCharacter_Statics::NewProp_MemberTimerHandle_MetaData) }; // 3999327403
@@ -240,9 +294,9 @@ void EmptyLinkFunctionForGeneratedCodeRangedEnemyCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ARangedEnemyCharacter, ARangedEnemyCharacter::StaticClass, TEXT("ARangedEnemyCharacter"), &Z_Registration_Info_UClass_ARangedEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARangedEnemyCharacter), 2794604109U) },
+		{ Z_Construct_UClass_ARangedEnemyCharacter, ARangedEnemyCharacter::StaticClass, TEXT("ARangedEnemyCharacter"), &Z_Registration_Info_UClass_ARangedEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARangedEnemyCharacter), 3334611718U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_659647766(TEXT("/Script/BattleOfAges"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_1513895913(TEXT("/Script/BattleOfAges"),
 		Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_git_battle_of_ages_source_BattleOfAges_Source_BattleOfAges_Public_RangedEnemyCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
