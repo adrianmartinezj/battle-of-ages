@@ -5,6 +5,9 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/ProjectileMovementComponent.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/SphereComponent.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "EnemyProjectile.generated.h"
 
 UCLASS()
@@ -28,5 +31,33 @@ public:
 	class UProjectileMovementComponent* ProjectileMovement;
 
 	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
-	float InitialSpeed = 800.0;
+	class USphereComponent* SphereCollision;
+
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
+	class UStaticMeshComponent* StaticMesh;
+
+	UFUNCTION(BlueprintCallable)
+	void ResetProjectile();
+
+	UFUNCTION(BlueprintCallable)
+	void HideProjectile();
+
+	UFUNCTION(BlueprintCallable)
+	void RevealProjectile();
+
+	UFUNCTION(BlueprintCallable)
+	void StopProjectile();
+
+	UFUNCTION(BlueprintCallable)
+	void StartProjectile();
+
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
+	AActor* ProjectileOwner;
+
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
+	FVector SourceOffset;
+
+private:
+	bool bShouldTrackSourceLocationRotation = false;
 };
+

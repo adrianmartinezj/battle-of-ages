@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "EnemyProjectile.h"
+#include "Engine/TimerHandle.h"
 #include "RangedEnemyCharacter.generated.h"
 
 UCLASS()
@@ -27,20 +28,42 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UFUNCTION(BlueprintCallable)
+	void ResetProjectile(AActor* projectile);
+
 	// Fires an EnemyProjectile from the ProjectileSource component directed along this characters forward.
-	bool RangedAttackForward();
+	void RangedAttackForward();
+
+	void PauseAttacks();
+
+	void FlipAndResumeAttacks();
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category="Projectile Settings")
-	int ProjectilesPerBurst = 3;
+	int ProjectilesPerBurst = 1;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Projectile Settings")
 	float DelayBetweenProjectiles = 0.25;
+	
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Projectile Settings")
+	float DelayBetweenBursts = 2.5;
 
-private:
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditDefaultsOnly, Category = "Projectile Settings")
+	TSubclassOf<AActor> ProjectileClass;
+
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "Projectile Settings")
+	int ShotsRemaining;
+
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
+	class USceneComponent* ProjectileSource;
+
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
 	TArray<AActor*> ProjectileList;
+private:
+	UPROPERTY()
+	FTimerHandle MemberTimerHandle;
 
 	void SetupProjectiles();
 
+	void SetupLoopingAttacks();
 };
 
